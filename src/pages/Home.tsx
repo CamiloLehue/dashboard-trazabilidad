@@ -11,19 +11,19 @@ export function Home() {
             <div className="w-full">
               <label
                 htmlFor="search"
-                className="block text-sm font-medium text-slate-700"
+                className="block text-sm font-medium text-neutral-100"
               >
                 Buscar Folio
               </label>
               <input
-                className="py-2 px-3  rounded-s-md  border-s border-t border-b border-slate-300 my-2 w-3/4"
+                className="py-2 px-3  rounded-s-md bg-neutral-950  border-s border-t border-b border-neutral-700 my-2 w-3/4"
                 name="search"
                 id="search"
                 type="text"
                 placeholder="Dígite el folio..."
               />
               <a href="/folioResumen">
-                <button className="w-1/4 rounded-e-md  bg-slate-50 border-e border-t border-b border-slate-200">
+                <button className="w-1/4 rounded-e-md  bg-neutral-950 border-e border-t border-b border-neutral-700">
                   Buscar
                 </button>
               </a>
@@ -31,13 +31,13 @@ export function Home() {
             <div>
               <label
                 htmlFor="more"
-                className="block text-sm font-medium text-slate-700"
+                className="block text-sm font-medium text-neutral-100"
               >
                 Agregar Folio
               </label>
               <button
                 id="more"
-                className="shadow w-full  bg-slate-950/70 rounded-md hover:bg-red-800 text-slate-50 my-2"
+                className="shadow w-full  bg-neutral-950/70 rounded-md hover:bg-red-800 text-neutral-50 my-2"
               >
                 +
               </button>
@@ -51,28 +51,28 @@ export function Home() {
                 <GitCommitVertical />
                 Línea de Estado Folio N° 7457546
               </h3>
-              <ol className="relative border-s border-slate-200 dark:border-slate-700">
+              <ol className="relative border-s border-neutral-600 dark:border-neutral-700">
                 <li className="mb-10 ms-4">
-                  <div className="absolute w-3 h-3 bg-slate-900 rounded-full mt-1.5 -start-1.5 border border-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-slate-400">
+                  <div className="absolute w-3 h-3 bg-neutral-900 rounded-full mt-1.5 -start-1.5 border border-neutral-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-neutral-400">
                     Actualizado el 10-01-2025
                   </time>
-                  <div className="border border-slate-200  p-5 rounded-md">
-                    <h3 className="text-lg font-semibold text-slate-800">
+                  <div className="border border-neutral-600  p-5 rounded-md">
+                    <h3 className="text-lg font-semibold text-neutral-100">
                       Centro
                     </h3>
-                    <p className="text-base font-normal text-slate-500">
+                    <p className="text-base font-normal text-neutral-500">
                       Finalizado
                     </p>
                   </div>
                 </li>
                 <li className="mb-10 ms-4">
-                  <div className="absolute w-4 h-4 bg-slate-900 rounded-full mt-1 -start-2 border border-white"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-slate-900">
+                  <div className="absolute w-4 h-4 bg-neutral-900 rounded-full mt-1 -start-2 border border-neutral-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-neutral-900">
                     Hoy 16-01-2025
                   </time>
-                  <div className="border border-slate-200  p-5 rounded-md">
-                    <h3 className="text-lg font-semibold text-slate-800">
+                  <div className="border border-neutral-600  p-5 rounded-md">
+                    <h3 className="text-lg font-semibold text-neutral-100">
                       Acopio
                     </h3>
                     <p className="text-base font-normal text-green-500">
@@ -81,15 +81,15 @@ export function Home() {
                   </div>
                 </li>
                 <li className="ms-4">
-                  <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border border-slate-400"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-slate-400">
+                  <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border border-neutral-400"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-neutral-400">
                     Fecha Estimada 20-01-2025
                   </time>
-                  <div className="border border-slate-200  p-5 rounded-md">
-                    <h3 className="text-lg font-semibold text-slate-400">
+                  <div className="border border-neutral-600  p-5 rounded-md">
+                    <h3 className="text-lg font-semibold text-neutral-400">
                       Planta
                     </h3>
-                    <p className="text-base font-normal text-slate-400">
+                    <p className="text-base font-normal text-neutral-400">
                       En Espera
                     </p>
                   </div>

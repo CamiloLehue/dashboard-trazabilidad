@@ -27,8 +27,8 @@ export function Dashboard() {
             </div>
             <div className="">
               <ul className="flex flex-col gap-2 pt-1">
-                <li className="flex flex-col border border-slate-200 rounded-lg p-2">
-                  <div className="flex justify-between border-b border-slate-100 pb-1 mb-1">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-2">
+                  <div className="flex justify-between border-b border-neutral-700 pb-1 mb-1">
                     <small className="flex items-center gap-1">
                       <ClipboardPen size={15} /> Modificado Por
                       <span className="font-bold ">Carlos Perez</span>
@@ -40,8 +40,8 @@ export function Dashboard() {
                     <span className="font-semibold">Folio N° 7457546</span>
                   </a>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-2">
-                  <div className="flex justify-between border-b border-slate-100 pb-1 mb-1">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-2">
+                  <div className="flex justify-between border-b border-neutral-700 pb-1 mb-1">
                     <small className="flex items-center gap-1">
                       <ClipboardPen size={15} /> Modificado Por
                       <span className="font-bold ">Jorge Perez</span>
@@ -53,8 +53,8 @@ export function Dashboard() {
                     <span className="font-semibold">Folio N° 7457546</span>
                   </a>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-2">
-                  <div className="flex justify-between border-b border-slate-100 pb-1 mb-1">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-2">
+                  <div className="flex justify-between border-b border-neutral-700 pb-1 mb-1">
                     <small className="flex items-center gap-1">
                       <ClipboardPen size={15} /> Modificado Por
                       <span className="font-bold ">Cristofer Perez</span>
@@ -66,8 +66,8 @@ export function Dashboard() {
                     <span className="font-semibold">Folio N° 7457546</span>
                   </a>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-2">
-                  <div className="flex justify-between border-b border-slate-100 pb-1 mb-1">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-2">
+                  <div className="flex justify-between border-b border-neutral-700 pb-1 mb-1">
                     <small className="flex items-center gap-1">
                       <ClipboardPen size={15} /> Modificado Por
                       <span className="font-bold ">Cristofer Perez</span>

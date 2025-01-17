@@ -15,8 +15,8 @@ export function FolioHistorialDoc() {
             <h4>Todos los Documentos</h4>
             <div className="mt-10 overflow-auto max-h-[550px]">
               <ul className="flex flex-col gap-1 pt-1">
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -31,7 +31,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">Ahora</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -43,8 +43,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -59,7 +59,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">hace 10 minutos</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -71,8 +71,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -87,7 +87,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">Hace 20 minutos</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -99,8 +99,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -115,7 +115,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">Hace 30 minutos</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -127,8 +127,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -143,7 +143,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">Hace 40 minutos</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -155,8 +155,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -171,7 +171,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">Hace 50 minutos</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -183,8 +183,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -199,7 +199,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">hace más de 1 hora</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -211,8 +211,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -227,7 +227,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">hace más de 1 hora</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -239,8 +239,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -255,7 +255,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">hace más de 1 hora</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -267,8 +267,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -283,7 +283,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">hace más de 1 hora</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -295,8 +295,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -311,7 +311,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">hace más de 1 hora</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
@@ -323,8 +323,8 @@ export function FolioHistorialDoc() {
                     </div>
                   </div>
                 </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="grid grid-cols-5 border-b border-slate-100 pb-3 ">
+                <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                  <div className="grid grid-cols-5 border-b border-neutral-700 pb-3 ">
                     <small className="flex items-center gap-1 font-bold">
                       <File size={18} />
                       Documento
@@ -339,7 +339,7 @@ export function FolioHistorialDoc() {
                       <a href="/folioResumen">hace más de 1 hora</a>
                     </small>
                     <div className="flex gap-2 justify-end">
-                      <a className="bg-transparent hover:text-slate-500">
+                      <a className="bg-transparent hover:text-neutral-500">
                         <FileDown />
                       </a>
                       <a className="bg-transparent hover:text-blue-500">
