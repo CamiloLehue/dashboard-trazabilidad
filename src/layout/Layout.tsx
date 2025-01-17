@@ -16,7 +16,7 @@ export function Layout({ title, description, children }: MyLayoutProps) {
       </div>
       <div className=" w-full h-screen ">
         <Header />
-        <div className="flex gap-3 pt-3">
+        <div className="flex gap-3 pt-3 px-2">
           <Aside />
           <main className="bg-slate-50/50 border border-white/80 backdrop-blur-xl w-full  rounded-xl px-5 pt-5">
             <h1>{title}</h1>

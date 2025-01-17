@@ -1,4 +1,4 @@
-import { Barcode } from "lucide-react";
+import { Barcode, CircleAlert, CircleCheck, CircleHelp, Hexagon } from "lucide-react";
 import { CardLayout } from "../components/ui/CardLayout";
 
 export function Folios() {
@@ -44,85 +44,89 @@ export function Folios() {
           </div>
         </CardLayout>
         <CardLayout>
-          <div className="">
-            <h3 className="font-semibold mb-5 flex justify-start gap-2 items-center">
-              <Barcode />
-              Listado de Folios
-            </h3>
-            <div className="mt-10 overflow-auto max-h-[350px]">
-              <ul className="flex flex-col gap-1 pt-1">
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="flex justify-between border-b border-slate-100 pb-3 ">
-                    <small className="flex items-center gap-1">
-                      <Barcode size={15} /> Folio N°
-                      <span className="font-bold ">7457546</span>
-                    </small>
-                    <small>
-                      <a href="/folioResumen">Ver detalles</a>
-                    </small>
-                  </div>
-                </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="flex justify-between border-b border-slate-100 pb-3 ">
-                    <small className="flex items-center gap-1">
-                      <Barcode size={15} /> Folio N°
-                      <span className="font-bold ">7457546</span>
-                    </small>
-                    <small>
-                      <a href="/folioResumen">Ver detalles</a>
-                    </small>
-                  </div>
-                </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="flex justify-between border-b border-slate-100 pb-3 ">
-                    <small className="flex items-center gap-1">
-                      <Barcode size={15} /> Folio N°
-                      <span className="font-bold ">7457546</span>
-                    </small>
-                    <small>
-                      <a href="/folioResumen">Ver detalles</a>
-                    </small>
-                  </div>
-                </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="flex justify-between border-b border-slate-100 pb-3 ">
-                    <small className="flex items-center gap-1">
-                      <Barcode size={15} /> Folio N°
-                      <span className="font-bold ">7457546</span>
-                    </small>
-                    <small>
-                      <a href="/folioResumen">Ver detalles</a>
-                    </small>
-                  </div>
-                </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="flex justify-between border-b border-slate-100 pb-3 ">
-                    <small className="flex items-center gap-1">
-                      <Barcode size={15} /> Folio N°
-                      <span className="font-bold ">7457546</span>
-                    </small>
-                    <small>
-                      <a href="/folioResumen">Ver detalles</a>
-                    </small>
-                  </div>
-                </li>
-                <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                  <div className="flex justify-between border-b border-slate-100 pb-3 ">
-                    <small className="flex items-center gap-1">
-                      <Barcode size={15} /> Folio N°
-                      <span className="font-bold ">7457546</span>
-                    </small>
-                    <small>
-                      <a href="/folioResumen">Ver detalles</a>
-                    </small>
-                  </div>
-                </li>
-              </ul>
+          <h3 className="font-semibold mb-5 flex justify-start gap-2 items-center">
+            <Barcode />
+            Listado de Folios
+          </h3>
+          <div className="mt-10 overflow-auto max-h-[350px]">
+            <div className="grid grid-cols-4 font-semibold border border-slate-200 rounded-lg p-5 bg-slate-200">
+              <p>N° Folios</p>
+              <p>Alertas</p>
+              <p className="text-center">Estado Actual</p>
+              <p className="text-end">Información</p>
             </div>
-            <button className="w-full rounded-md mt-5  bg-slate-50 hover:bg-red-700 border border-slate-200 hover:text-white">
-              Cargar más folios
-            </button>
-          </div> 
+            <ul className="flex flex-col gap-1 pt-1">
+              <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
+                <div className="grid grid-cols-4 border-b border-slate-100 pb-3 ">
+                  <small className="flex items-center gap-1">
+                    <Barcode size={15} /> Folio N°
+                    <span className="font-bold ">7457546</span>
+                  </small>
+                  <small className="flex items-center gap-1 text-green-600">
+                  <CircleCheck size={15} />Bien
+                  </small>
+                  <div className="flex justify-center">
+                    <small className="flex gap-1  text-lime-500 border border-lime-500 px-5 py-1 rounded-full">
+                      <Hexagon size={20} />
+                      En Acopio
+                    </small>
+                  </div>
+                  <div className="flex justify-end">
+                    <small>
+                      <a href="/folioResumen">Ver detalles</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
+                <div className="grid grid-cols-4 border-b border-slate-100 pb-3 ">
+                  <small className="flex items-center gap-1">
+                    <Barcode size={15} /> Folio N°
+                    <span className="font-bold ">7457545</span>
+                  </small>
+                  <small className="flex items-center gap-1 text-yellow-600">
+                  <CircleHelp size={15} /> Riesgo
+                  </small>
+                  <div className="flex justify-center">
+                    <small className="flex gap-1  text-lime-500 border border-lime-500 px-5 py-1 rounded-full">
+                      <Hexagon size={20} />
+                      En Acopio
+                    </small>
+                  </div>
+                  <div className="flex justify-end">
+                    <small>
+                      <a href="/folioResumen">Ver detalles</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+              <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
+                <div className="grid grid-cols-4 border-b border-slate-100 pb-3 ">
+                  <small className="flex items-center gap-1">
+                    <Barcode size={15} /> Folio N°
+                    <span className="font-bold ">7457544</span>
+                  </small>
+                  <small className="flex items-center gap-1 text-red-600">
+                  <CircleAlert size={15} />Critico
+                  </small>
+                  <div className="flex justify-center">
+                    <small className="flex gap-1  text-lime-500 border border-lime-500 px-5 py-1 rounded-full">
+                      <Hexagon size={20} />
+                      En Acopio
+                    </small>
+                  </div>
+                  <div className="flex justify-end">
+                    <small>
+                      <a href="/folioResumen">Ver detalles</a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button className="w-full rounded-md mt-5  bg-slate-50 hover:bg-red-700 border border-slate-200 hover:text-white">
+            Cargar más folios
+          </button>
         </CardLayout>
       </main>
     </>

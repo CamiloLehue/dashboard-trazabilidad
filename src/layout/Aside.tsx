@@ -1,17 +1,18 @@
-import { Barcode, LandPlot, LayoutPanelLeft } from "lucide-react";
+import { Barcode, ChartNoAxesCombined, LandPlot, LayoutPanelLeft } from "lucide-react";
 
 export function Aside() {
   return (
     <>
       <aside className="backdrop-blur-sm bg-white/90  rounded-e-xl p-5 text-base">
-        <nav className="py-10 min-w-36">
+        <nav className="min-w-36">
+         <h4 className="py-3 font-semibold text-slate-800 w-full border-b mb-5">Menu</h4>
           <ul className="flex flex-col gap-5 ">
             <li>
               <a
                 className="flex items-center justify-items-center gap-2"
                 href="/dashboard"
               >
-                <LayoutPanelLeft size={16} />
+                <ChartNoAxesCombined size={16} />
                 Dashboard
               </a>
             </li>
@@ -21,10 +22,10 @@ export function Aside() {
                 href="/inicio"
               >
                 <LayoutPanelLeft size={16} />
-                Acceso Rapido
+                Actividades
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 className="flex items-center justify-items-center gap-2"
                 href="/centros"
@@ -32,7 +33,7 @@ export function Aside() {
                 <LandPlot size={16} />
                 Centros
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 className="flex items-center justify-items-center gap-2"
