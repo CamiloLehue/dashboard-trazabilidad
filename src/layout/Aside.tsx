@@ -3,9 +3,9 @@ import { Barcode, ChartNoAxesCombined, LandPlot, LayoutPanelLeft } from "lucide-
 export function Aside() {
   return (
     <>
-      <aside className="backdrop-blur-sm bg-white/90  rounded-e-xl p-5 text-base">
+      <aside className="backdrop-blur-sm bg-neutral-950/90  rounded-e-xl p-5 text-base">
         <nav className="min-w-36">
-         <h4 className="py-3 font-semibold text-slate-800 w-full border-b mb-5">Menu</h4>
+         <h4 className="py-3 font-semibold text-neutral-50 w-full border-b border-neutral-800 mb-5">Menu</h4>
           <ul className="flex flex-col gap-5 ">
             <li>
               <a

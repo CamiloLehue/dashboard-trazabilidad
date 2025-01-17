@@ -10,19 +10,19 @@ export function Folios() {
             <div className="w-full">
               <label
                 htmlFor="search"
-                className="block text-sm font-medium text-slate-700"
+                className="block text-sm font-medium text-neutral-100"
               >
                 Buscar Folio
               </label>
               <input
-                className="py-2 px-3  rounded-s-md  border-s border-t border-b border-slate-300 my-2 w-3/4"
+                className="py-2 px-3  rounded-s-md bg-neutral-950  border-s border-t border-b border-neutral-700 my-2 w-3/4"
                 name="search"
                 id="search"
                 type="text"
                 placeholder="Dígite el folio..."
               />
               <a href="/folioResumen">
-                <button className="w-1/4 rounded-e-md  bg-slate-50 border-e border-t border-b border-slate-200">
+                <button className="w-1/4 rounded-e-md  bg-neutral-950 border-e border-t border-b border-neutral-700">
                   Buscar
                 </button>
               </a>
@@ -30,15 +30,15 @@ export function Folios() {
             <div>
               <label
                 htmlFor="more"
-                className="block text-sm font-medium text-slate-700"
+                className="block text-sm font-medium text-neutral-100"
               >
                 Filtrar Por
               </label>
-              <select className="w-full rounded-md border border-slate-200 bg-slate-100 py-2 px-3 my-2">
-                <option className="bg-slate-100 rounded-md">Todos</option>
-                <option className="bg-slate-100 rounded-md">Aprobado</option>
-                <option className="bg-slate-100 rounded-md">Procesado</option>
-                <option className="bg-slate-100 rounded-md">Pendientes</option>
+              <select className="w-full rounded-md border border-neutral-700 bg-neutral-950 py-2 px-3 my-2">
+                <option className="bg-neutral-950 rounded-md">Todos</option>
+                <option className="bg-neutral-950 rounded-md">Aprobado</option>
+                <option className="bg-neutral-950 rounded-md">Procesado</option>
+                <option className="bg-neutral-950 rounded-md">Pendientes</option>
               </select>
             </div>
           </div>
@@ -49,15 +49,15 @@ export function Folios() {
             Listado de Folios
           </h3>
           <div className="mt-10 overflow-auto max-h-[350px]">
-            <div className="grid grid-cols-4 font-semibold border border-slate-200 rounded-lg p-5 bg-slate-200">
+            <div className="grid grid-cols-4 font-semibold border border-neutral-700 rounded-lg p-5 bg-neutral-900">
               <p>N° Folios</p>
               <p>Alertas</p>
               <p className="text-center">Estado Actual</p>
               <p className="text-end">Información</p>
             </div>
             <ul className="flex flex-col gap-1 pt-1">
-              <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                <div className="grid grid-cols-4 border-b border-slate-100 pb-3 ">
+              <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                <div className="grid grid-cols-4 border-b border-neutral-700 pb-3 ">
                   <small className="flex items-center gap-1">
                     <Barcode size={15} /> Folio N°
                     <span className="font-bold ">7457546</span>
@@ -78,8 +78,8 @@ export function Folios() {
                   </div>
                 </div>
               </li>
-              <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                <div className="grid grid-cols-4 border-b border-slate-100 pb-3 ">
+              <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                <div className="grid grid-cols-4 border-b border-neutral-700 pb-3 ">
                   <small className="flex items-center gap-1">
                     <Barcode size={15} /> Folio N°
                     <span className="font-bold ">7457545</span>
@@ -100,8 +100,8 @@ export function Folios() {
                   </div>
                 </div>
               </li>
-              <li className="flex flex-col border border-slate-200 rounded-lg p-5 hover:bg-slate-200 transition-all duration-00">
-                <div className="grid grid-cols-4 border-b border-slate-100 pb-3 ">
+              <li className="flex flex-col border border-neutral-700 rounded-lg p-5 hover:bg-neutral-950 transition-all duration-00">
+                <div className="grid grid-cols-4 border-b border-neutral-700 pb-3 ">
                   <small className="flex items-center gap-1">
                     <Barcode size={15} /> Folio N°
                     <span className="font-bold ">7457544</span>
@@ -124,8 +124,8 @@ export function Folios() {
               </li>
             </ul>
           </div>
-          <button className="w-full rounded-md mt-5  bg-slate-50 hover:bg-red-700 border border-slate-200 hover:text-white">
-            Cargar más folios
+          <button className="w-full rounded-md mt-5  bg-neutral-950 hover:bg-red-700 border border-neutral-700 hover:text-white">
+            Cargar más folios...
           </button>
         </CardLayout>
       </main>
