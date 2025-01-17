@@ -26,7 +26,7 @@ const AppLayout = () => {
         <Route
           path="/inicio"
           element={
-            <Layout title="Dashboard Control" description="Sistema">
+            <Layout title="Últimas Actividades" description="Sistema">
               <Home />
             </Layout>
           }
