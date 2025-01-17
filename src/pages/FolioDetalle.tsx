@@ -14,6 +14,7 @@ import {
   Truck,
 } from "lucide-react";
 import { CardLayout } from "../components/ui/CardLayout";
+import { Toltip } from "../components/ui/Toltip";
 
 export function FolioDetalle() {
   return (
@@ -34,8 +35,11 @@ export function FolioDetalle() {
           <ol className="items-center grid grid-cols-5">
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-14 h-12 bg-green-200 rounded-full ring-0 ring-white ">
-                  <Bolt size={15} color="black" />
+                <div className="relative group">
+                  <div className="z-10 flex items-center justify-center w-14 h-12 bg-green-200 rounded-full ring-0 ring-white ">
+                    <Bolt size={15} color="black" />
+                  </div>
+                  <Toltip/>
                 </div>
                 <div className="hidden sm:flex w-full bg-green-200 h-0.5 "></div>
               </div>
@@ -53,8 +57,12 @@ export function FolioDetalle() {
             </li>
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-14 h-12 bg-green-200 rounded-full ring-0 ring-white ">
-                  <Ship size={15} color="black" />
+                <div className="relative group">
+                  <div className="z-10 flex items-center justify-center w-14 h-12 bg-green-200 rounded-full ring-0 ring-white ">
+                    <Ship size={15} color="black" />
+                  </div>
+                  
+                  <Toltip/>
                 </div>
                 <div className="hidden sm:flex w-full bg-green-200 h-0.5 "></div>
               </div>
@@ -72,8 +80,12 @@ export function FolioDetalle() {
             </li>
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
-                <div className="z-10 animate-pulse flex items-center justify-center w-20 h-16 bg-lime-300 rounded-full ring-0 ring-white ">
-                  <Hexagon size={30} color="white" />
+                <div className="relative group">
+                  <div className="z-10 animate-pulse flex items-center justify-center w-20 h-16 bg-lime-300 rounded-full ring-0 ring-white ">
+                    <Hexagon size={30} color="white" />
+                  </div>
+                  
+                  <Toltip/>
                 </div>
                 <div className="hidden sm:flex w-full h-0.5 border-b-2 border-dashed border-neutral-700"></div>
               </div>
@@ -91,8 +103,14 @@ export function FolioDetalle() {
             </li>
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-100 rounded-full ring-0 ring-white ">
-                  <Truck size={12} color="black" />
+                <div className="relative group">
+                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-100 rounded-full ring-0 ring-white ">
+                    <Truck size={12} color="black" />
+                  </div>
+                  
+                  <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-neutral-100 text-black text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Información del proceso
+                  </div>
                 </div>
                 <div className="hidden sm:flex w-full h-0.5 border-b-2 border-dashed border-neutral-700"></div>
               </div>
@@ -110,13 +128,21 @@ export function FolioDetalle() {
             </li>
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
-                <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-100 rounded-full ring-0 ring-white ">
-                  <LandPlot size={12} color="black" />
+                <div className="relative group">
+                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-100 rounded-full ring-0 ring-white ">
+                    <LandPlot size={12} color="black" />
+                  </div>
+                  
+                  <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-neutral-100 text-black text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Información del proceso
+                  </div>
                 </div>
                 <div className="hidden sm:flex w-full h-0.5 border-b-2 border-dashed border-neutral-700"></div>
               </div>
               <div className="mt-3 sm:pe-8">
-                <h3 className="text-lg font-semibold text-neutral-100 ">Planta</h3>
+                <h3 className="text-lg font-semibold text-neutral-100 ">
+                  Planta
+                </h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
                   25-01-2025
                 </time>
@@ -127,6 +153,7 @@ export function FolioDetalle() {
             </li>
           </ol>
         </CardLayout>
+
         <div className="grid grid-cols-3 gap-2">
           <CardLayout className="col-span-2 grid grid-cols-3">
             <div className="col-span-2">
