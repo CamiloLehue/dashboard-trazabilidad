@@ -68,7 +68,7 @@ export function Home() {
                 </li>
                 <li className="mb-10 ms-4">
                   <div className="absolute w-4 h-4 bg-neutral-900 rounded-full mt-1 -start-2 border border-neutral-700"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-neutral-900">
+                  <time className="mb-1 text-sm font-normal leading-none text-neutral-200">
                     Hoy 16-01-2025
                   </time>
                   <div className="border border-neutral-600  p-5 rounded-md">
