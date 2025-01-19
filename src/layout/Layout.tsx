@@ -20,11 +20,11 @@ export function Layout({ title, children }: MyLayoutProps) {
           <div className="absolute h-full bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_100%_100px,#CA0D2E,transparent)] "></div>
         </div>
         <div className=" w-full">
-          <div className={`flex gap-1  w-full ${fullScreen ? "p-3" : "p-1"}`}>
+          <div className={`flex gap-1  w-full ${fullScreen ? "p-3" : "p-1 "}`}>
             <Aside fullScreen={fullScreen} stateFullScreen={setFullScreen} />
-            <div className="flex flex-col w-full gap-1">
+            <div className="flex flex-col w-full gap-1 ">
               <Header fullScreen={fullScreen} stateFullScreen={setFullScreen} />
-              <main className="bg-black/50 backdrop-blur-xl w-full rounded-xl p-5">
+              <main className={`bg-black/50 backdrop-blur-xl  w-full rounded-xl p-5  ${fullScreen ? "" : "h-full"}`}>
                 <h1 className="px-2">{title}</h1>
                 {children}
               </main>
