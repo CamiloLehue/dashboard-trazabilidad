@@ -1,12 +1,33 @@
-import { Barcode, ChartNoAxesCombined, LandPlot, LayoutPanelLeft } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Barcode,
+  ChartNoAxesCombined,
+  LayoutGrid,
+  LayoutPanelLeft,
+  Minimize,
+} from "lucide-react";
+import { useNavigate } from "react-router";
 
-export function Aside() {
+interface AsideProps {
+  fullScreen: boolean;
+  stateFullScreen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function Aside({ fullScreen, stateFullScreen }: AsideProps) {
+  const navigate = useNavigate();
   return (
     <>
-      <aside className="backdrop-blur-sm bg-neutral-950/90  rounded-e-xl p-5 text-base">
+      <aside
+        className={`bg-black/50 backdrop-blur-xl  rounded-xl p-2 text-base ${
+          fullScreen ? "visible" : "hidden"
+        }`}
+      >
         <nav className="min-w-36">
-         <h4 className="py-3 font-semibold text-neutral-50 w-full border-b border-neutral-800 mb-5">Menu</h4>
-          <ul className="flex flex-col gap-5 ">
+          <h4 className="py-3 font-semibold text-neutral-500 text-center border-b border-neutral-800 mb-5">
+            General
+          </h4>
+          <ul className="flex flex-col gap-5 py-5 px-5 text-xs text-neutral-300">
             <li>
               <a
                 className="flex items-center justify-items-center gap-2"
@@ -41,6 +62,72 @@ export function Aside() {
               >
                 <Barcode size={16} />
                 Folios
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <aside
+        className={`bg-black/50 backdrop-blur-xl  rounded-xl p-2 text-base ${
+          !fullScreen ? "visible" : "hidden"
+        }`}
+      >
+        <nav>
+          <button
+            onClick={() => stateFullScreen(true)}
+            className="text-neutral-400 bg-black hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent hover:bg-black transition-all duration-300 "
+          >
+            <Minimize size={15} />
+          </button>
+          <button
+            onClick={() => navigate("/dashboard") }
+            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
+          >
+            <LayoutGrid size={15} />
+          </button>
+          <button
+            onClick={() => navigate(-1)}
+            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
+          >
+            <ArrowLeft size={15} />
+          </button>
+          <button
+            onClick={() => navigate(1)}
+            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
+          >
+            <ArrowRight size={15} />
+          </button>
+          <ul className="flex flex-col gap-5  py-5 px-5 text-xs">
+            <li>
+              <a
+                className="flex items-center justify-items-center gap-2"
+                href="/dashboard"
+              >
+                <ChartNoAxesCombined size={16} />
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex items-center justify-items-center gap-2"
+                href="/inicio"
+              >
+                <LayoutPanelLeft size={16} />
+              </a>
+            </li>
+            {/* <li>
+              <a
+                className="flex items-center justify-items-center gap-2"
+                href="/centros"
+              >
+                <LandPlot size={16} />
+              </a>
+            </li> */}
+            <li>
+              <a
+                className="flex items-center justify-items-center gap-2"
+                href="/folio"
+              >
+                <Barcode size={16} />
               </a>
             </li>
           </ul>

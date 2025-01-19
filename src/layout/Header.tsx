@@ -1,28 +1,64 @@
-export function Header() {
+import {
+  ArrowLeft,
+  ArrowRight,
+  LayoutGrid,
+  Maximize,
+  UserRound,
+} from "lucide-react";
+import { useNavigate } from "react-router";
+
+interface HeaderProps {
+  fullScreen: boolean;
+  stateFullScreen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function Header(  {fullScreen, stateFullScreen}: HeaderProps) {
+  const navigate = useNavigate();
   return (
     <>
-      <header className=" w-full py-3 grid grid-cols-6">
-        <div>
-
+      <header className={ `w-full grid grid-cols-6 gap-1 ${(fullScreen ? "visible" : "hidden")}` }>
+        <div className="flex justify-start p-2 h-full w-full items-center gap-2 rounded-xl bg-black/50 backdrop-blur-xl  ">
+          <button onClick={() => stateFullScreen(false)} className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg shadow shadow-neutral-200/20 hover:border-transparent hover:bg-black transition-all duration-300 ">
+            <Maximize size={15} />
+          </button>
+          <button
+            onClick={() => navigate("/dashboard") }
+            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg shadow shadow-neutral-200/20 hover:border-transparent hover:bg-black transition-all duration-300 "
+          >
+            <LayoutGrid size={15} />
+          </button>
+          <button
+            onClick={() => navigate(-1)}
+            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg shadow shadow-neutral-200/20 hover:border-transparent hover:bg-black transition-all duration-300 "
+          >
+            <ArrowLeft size={15} />
+          </button>
+          <button
+            onClick={() => navigate(1)}
+            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg shadow shadow-neutral-200/20 hover:border-transparent hover:bg-black transition-all duration-300 "
+          >
+            <ArrowRight size={15} />
+          </button>
         </div>
-        <div className="col-span-4 rounded-full grid grid-cols-4 w-full bg-neutral-950/70 backdrop-blur-xl min-h-16 shadow-xl shadow-neutral-950 border border-white/20">
+        <div className="col-span-4 rounded-xl grid grid-cols-4 w-full bg-black/50 backdrop-blur-xl min-h-14 shadow-xl shadow-neutral-500/20 ">
           <div className="flex justify-start ps-10 items-center">
-            <img src="logo.png" alt="logo" className="w-10 h-10" />
+            <img src="logo.png" alt="logo" className="w-8 h-8" />
           </div>
           <div className="col-span-2 text-white flex items-center justify-center">
-            <p className="text-xs font-extrabold text-neutral-300">SISTEMA TRAZABILIDAD</p>
-          </div>
-          <div className="flex justify-end pe-10 items-center ">
-            <button className="shadow text-neutral-950 rounded-full hover:border-transparent hover:opacity-95 ">Administración</button>
+            <p className="text-xs font-extrabold text-neutral-300">
+              SISTEMA TRAZABILIDAD
+            </p>
           </div>
         </div>
-        <div className="relative flex justify-center items-center  ">
-          
-          <button className="relative text-neutral-950 backdrop-blur-xl bg-neutral-50 hover:border-white/20 hover:bg-neutral-900/80 hover:text-white rounded-xl  border border-neutral-700/50 shadow shadow-white/80">
-            Notificaciones
-            <div className="absolute text-white  -top-3 -right-3 flex justify-center items-center gap-2 rounded-xl bg-red-500 px-2 shadow shadow-red-800">
-              1
-          </div>
+        <div className="flex justify-end pe-2 items-center gap-2 rounded-xl bg-black/50 backdrop-blur-xl ">
+          {/* <button className="shadow text-xs text-white rounded-full hover:border-transparent hover:opacity-95 ">
+            Administración
+          </button>
+          <button className="bg-red-700 shadow text-xs text-white rounded-full hover:border-transparent hover:opacity-95 ">
+            Alertas
+          </button> */}
+          <button className="p-3 rounded-lg shadow shadow-neutral-200/20 hover:border-transparent hover:bg-black transition-all duration-300 ">
+            <UserRound size={14} />
           </button>
         </div>
       </header>

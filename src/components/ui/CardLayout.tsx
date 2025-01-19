@@ -7,7 +7,7 @@ interface CardLayoutProps {
 
 export function CardLayout({ children, className }: CardLayoutProps) {
     return (
-        <div className={`w-full p-10 rounded-lg bg-neutral-800 shadow ${className}`}>
+        <div className={`w-full p-10 rounded-lg bg-black/50 shadow ${className}`}>
             {children}
         </div>
     )
