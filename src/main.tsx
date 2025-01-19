@@ -10,6 +10,8 @@ import { FolioDetalle } from "./pages/FolioDetalle.tsx";
 import { FolioHistorialDoc } from "./pages/FolioHistorialDoc.tsx";
 import { Dashboard } from "./pages/Dashboard.tsx";
 
+import '@fontsource-variable/rubik';
+
 const AppLayout = () => {
   // const location = useLocation();
   return (
