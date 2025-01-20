@@ -1,4 +1,10 @@
-import { Barcode, CircleAlert, CircleCheck, CircleHelp, Hexagon } from "lucide-react";
+import {
+  Barcode,
+  CircleAlert,
+  CircleCheck,
+  CircleHelp,
+  Hexagon,
+} from "lucide-react";
 import { CardLayout } from "../components/ui/CardLayout";
 
 export function Folios() {
@@ -38,7 +44,9 @@ export function Folios() {
                 <option className="bg-neutral-950 rounded-md">Todos</option>
                 <option className="bg-neutral-950 rounded-md">Aprobado</option>
                 <option className="bg-neutral-950 rounded-md">Procesado</option>
-                <option className="bg-neutral-950 rounded-md">Pendientes</option>
+                <option className="bg-neutral-950 rounded-md">
+                  Pendientes
+                </option>
               </select>
             </div>
           </div>
@@ -63,7 +71,8 @@ export function Folios() {
                     <span className="font-bold ">7457546</span>
                   </small>
                   <small className="flex items-center gap-1 text-green-600">
-                  <CircleCheck size={15} />Bien
+                    <CircleCheck size={15} />
+                    Bien
                   </small>
                   <div className="flex justify-center">
                     <small className="flex gap-1  text-lime-500 border border-lime-500 px-5 py-1 rounded-full">
@@ -85,7 +94,7 @@ export function Folios() {
                     <span className="font-bold ">7457545</span>
                   </small>
                   <small className="flex items-center gap-1 text-yellow-600">
-                  <CircleHelp size={15} /> Riesgo
+                    <CircleHelp size={15} /> Riesgo
                   </small>
                   <div className="flex justify-center">
                     <small className="flex gap-1  text-lime-500 border border-lime-500 px-5 py-1 rounded-full">
@@ -107,7 +116,8 @@ export function Folios() {
                     <span className="font-bold ">7457544</span>
                   </small>
                   <small className="flex items-center gap-1 text-red-600">
-                  <CircleAlert size={15} />Critico
+                    <CircleAlert size={15} />
+                    Critico
                   </small>
                   <div className="flex justify-center">
                     <small className="flex gap-1  text-lime-500 border border-lime-500 px-5 py-1 rounded-full">

@@ -24,8 +24,8 @@ export function FolioDetalle() {
           <div className="flex justify-between items-center mb-5">
             <h2>
               Proceso en tiempo real{" "}
-              <span className="text-xs">
-                Ultima Actualización: hace 2 minutos.
+              <span className="text-xs text-neutral-500">
+                Última Actualización: hace 2 minutos.
               </span>
             </h2>
             <h3 className="text-neutral-50 border border-lime-300 rounded-full px-10">

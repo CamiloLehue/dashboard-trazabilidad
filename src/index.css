@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@fontsource-variable/rubik';
 
 @layer base {
   h1 {
@@ -43,10 +44,11 @@
 }
 
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  font-family: 'Rubik Variable', sans-serif;
 }
-
 
 
 button {
