@@ -20,7 +20,7 @@ export function Aside({ fullScreen, stateFullScreen }: AsideProps) {
     <>
       <aside
         className={`bg-black/50 backdrop-blur-xl  rounded-xl p-2 text-base ${
-          fullScreen ? "visible" : "hidden"
+          fullScreen ? "visible animate-fade-in-right animate-duration-500" : "hidden "
         }`}
       >
         <nav className="min-w-36">
@@ -69,7 +69,7 @@ export function Aside({ fullScreen, stateFullScreen }: AsideProps) {
       </aside>
       <aside
         className={`bg-black/50 backdrop-blur-xl  rounded-xl p-2 text-base ${
-          !fullScreen ? "visible" : "hidden"
+          !fullScreen ? "visible animate-fade-in-right animate-duration-500" : "hidden "
         }`}
       >
         <nav>
@@ -81,19 +81,19 @@ export function Aside({ fullScreen, stateFullScreen }: AsideProps) {
           </button>
           <button
             onClick={() => navigate("/dashboard") }
-            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
+            className="text-neutral-400 bg-transparent hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
           >
             <LayoutGrid size={15} />
           </button>
           <button
             onClick={() => navigate(-1)}
-            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
+            className="text-neutral-400 bg-transparent hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
           >
             <ArrowLeft size={15} />
           </button>
           <button
             onClick={() => navigate(1)}
-            className="text-neutral-400 hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
+            className="text-neutral-400 bg-transparent hover:text-white w-full h-full flex justify-center items-center rounded-lg  hover:border-transparent  transition-all duration-300 "
           >
             <ArrowRight size={15} />
           </button>
