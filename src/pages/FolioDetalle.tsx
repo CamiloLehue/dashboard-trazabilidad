@@ -5,6 +5,7 @@ import {
   FilePenLine,
   FileSearch,
   FileUp,
+  FishSymbol,
   Hexagon,
   LandPlot,
   Link,
@@ -20,7 +21,7 @@ export function FolioDetalle() {
   return (
     <>
       <main className="w-full rounded-lg my-5 flex  flex-col gap-2">
-        <CardLayout>
+        <CardLayout className="">
           <div className="flex justify-between items-center mb-5">
             <h2>
               Proceso en tiempo real{" "}
@@ -28,18 +29,18 @@ export function FolioDetalle() {
                 Última Actualización: hace 2 minutos.
               </span>
             </h2>
-            <h3 className="text-neutral-50 border border-lime-300 rounded-full px-10">
+            <h3 className="text-neutral-50 border border-green-400 rounded-full px-10">
               En Acopio
             </h3>
           </div>
-          <ol className="items-center grid grid-cols-5">
+          <ol className="items-center grid grid-cols-8">
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
                 <div className="relative group">
-                  <div className="z-10 flex items-center justify-center w-14 h-12 bg-green-200 rounded-full ring-0 ring-white ">
+                  <div className="z-10 flex items-center justify-center w-14 h-12 bg-green-400 rounded-full ring-0 ring-white cursor-pointer">
                     <Bolt size={15} color="black" />
                   </div>
-                  <Toltip/>
+                  <Toltip estado={'centros'}/>
                 </div>
                 <div className="hidden sm:flex w-full bg-green-200 h-0.5 "></div>
               </div>
@@ -55,20 +56,21 @@ export function FolioDetalle() {
                 </p>
               </div>
             </li>
+            
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
                 <div className="relative group">
-                  <div className="z-10 flex items-center justify-center w-14 h-12 bg-green-200 rounded-full ring-0 ring-white ">
+                  <div className="z-10 flex items-center justify-center w-14 h-12 bg-green-400 rounded-full ring-0 ring-white cursor-pointer">
                     <Ship size={15} color="black" />
                   </div>
                   
-                  <Toltip/>
+                  <Toltip estado={'centros'}/>
                 </div>
                 <div className="hidden sm:flex w-full bg-green-200 h-0.5 "></div>
               </div>
               <div className="mt-3 sm:pe-8">
                 <h3 className="text-lg font-semibold text-neutral-100 ">
-                  Transporte Marítimo
+                  TransporteMarit.
                 </h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
                   12-01-2025
@@ -81,11 +83,36 @@ export function FolioDetalle() {
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
                 <div className="relative group">
-                  <div className="z-10 animate-pulse flex items-center justify-center w-20 h-16 bg-lime-300 rounded-full ring-0 ring-white ">
+                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-green-400 rounded-full ring-0 ring-white cursor-pointer ">
+                    
+                    <FishSymbol size={15} color="black" />
+                  </div>
+                  
+                  <Toltip estado={'conteo'}/>
+                </div>
+                <div className="hidden sm:flex w-full bg-green-200 h-0.5 "></div>
+              </div>
+              <div className="mt-3 sm:pe-8">
+                <h3 className="text-lg font-semibold text-neutral-100 ">
+                  Conteo
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
+                  12-01-2025
+                </time>
+                <p className="text-base font-normal text-green-500 ">
+                  
+                  Finalizado
+                </p>
+              </div>
+            </li>
+            <li className="relative mb-6 sm:mb-0">
+              <div className="flex items-center">
+                <div className="relative group">
+                  <div className="z-10 animate-pulse flex items-center justify-center w-20 h-16 bg-green-400 rounded-full ring-0 ring-white cursor-pointer">
                     <Hexagon size={30} color="white" />
                   </div>
                   
-                  <Toltip/>
+                  <Toltip estado={'acopio'}/>
                 </div>
                 <div className="hidden sm:flex w-full h-0.5 border-b-2 border-dashed border-neutral-700"></div>
               </div>
@@ -96,7 +123,7 @@ export function FolioDetalle() {
                 <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
                   20-01-2025
                 </time>
-                <p className="text-base font-normal text-lime-500 animate-pulse">
+                <p className="text-base font-normal text-green-400 animate-pulse">
                   En Proceso
                 </p>
               </div>
@@ -104,8 +131,8 @@ export function FolioDetalle() {
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
                 <div className="relative group">
-                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-100 rounded-full ring-0 ring-white ">
-                    <Truck size={12} color="black" />
+                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-400 rounded-full ring-0 ring-white ">
+                  <FishSymbol size={15} color="black" />
                   </div>
                   
                   <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-neutral-100 text-black text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -115,8 +142,8 @@ export function FolioDetalle() {
                 <div className="hidden sm:flex w-full h-0.5 border-b-2 border-dashed border-neutral-700"></div>
               </div>
               <div className="mt-3 sm:pe-8">
-                <h3 className="text-lg font-semibold text-neutral-100 ">
-                  Transporte Terrestre
+                <h3 className="text-lg font-semibold text-neutral-400 ">
+                  Conteo
                 </h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
                   25-01-2025
@@ -129,7 +156,32 @@ export function FolioDetalle() {
             <li className="relative mb-6 sm:mb-0">
               <div className="flex items-center">
                 <div className="relative group">
-                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-100 rounded-full ring-0 ring-white ">
+                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-400 rounded-full ring-0 ring-white ">
+                    <Truck size={12} color="black" />
+                  </div>
+                  
+                  <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-neutral-100 text-black text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Información del proceso
+                  </div>
+                </div>
+                <div className="hidden sm:flex w-full h-0.5 border-b-2 border-dashed border-neutral-700"></div>
+              </div>
+              <div className="mt-3 sm:pe-8">
+                <h3 className="text-lg font-semibold text-neutral-400 ">
+                  TransporteTerr.
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
+                  25-01-2025
+                </time>
+                <p className="text-base font-normal text-neutral-500 ">
+                  En espera
+                </p>
+              </div>
+            </li>
+            <li className="relative mb-6 sm:mb-0">
+              <div className="flex items-center">
+                <div className="relative group">
+                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-400 rounded-full ring-0 ring-white ">
                     <LandPlot size={12} color="black" />
                   </div>
                   
@@ -140,8 +192,33 @@ export function FolioDetalle() {
                 <div className="hidden sm:flex w-full h-0.5 border-b-2 border-dashed border-neutral-700"></div>
               </div>
               <div className="mt-3 sm:pe-8">
-                <h3 className="text-lg font-semibold text-neutral-100 ">
+                <h3 className="text-lg font-semibold text-neutral-400 ">
                   Planta
+                </h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
+                  25-01-2025
+                </time>
+                <p className="text-base font-normal text-neutral-500 ">
+                  En espera
+                </p>
+              </div>
+            </li>
+            <li className="relative mb-6 sm:mb-0">
+              <div className="flex items-center">
+                <div className="relative group">
+                  <div className="z-10 flex items-center justify-center w-6 h-6 bg-neutral-400 rounded-full ring-0 ring-white ">
+                  <FishSymbol size={15} color="black" />
+                  </div>
+                  
+                  <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-neutral-100 text-black text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Información del proceso
+                  </div>
+                </div>
+                <div className="hidden sm:flex w-full h-0.5 border-b-2 border-dashed border-neutral-700"></div>
+              </div>
+              <div className="mt-3 sm:pe-8">
+                <h3 className="text-lg font-semibold text-neutral-400 ">
+                  Conteo Filete
                 </h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-neutral-400 ">
                   25-01-2025
@@ -218,7 +295,7 @@ export function FolioDetalle() {
           </CardLayout>
         </div>
         <CardLayout>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center  ">
             <h2>
               Documentos Adjuntos <span>3/9</span>
             </h2>
@@ -234,9 +311,9 @@ export function FolioDetalle() {
               </a>
             </div>
           </div>
-          <div className="mt-5 bg-neutral-950 rounded-md p-5 overflow-auto max-h-[118px]">
+          <div className="mt-2 bg-neutral-950 rounded-md p-2 overflow-auto max-h-[129px]">
             <ul>
-              <li className="flex items-center justify-between border-b border-neutral-700 py-2">
+              <li className="flex items-center justify-between border-b border-neutral-700 py-1">
                 <a className="flex justify-center items-center gap-1" href="#">
                   Documento Uno <Link color="red" size={13} />
                 </a>

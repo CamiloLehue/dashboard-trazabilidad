@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0', // Permite todas las conexiones
-    port: 3000,
+    port: 3006,
     allowedHosts: ['trazas.wisensor.cl'], // Agrega esta línea si una extensión personalizada lo requiere
   },
 });

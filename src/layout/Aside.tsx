@@ -3,6 +3,7 @@ import {
   ArrowRight,
   Barcode,
   ChartNoAxesCombined,
+  FishSymbol,
   LayoutGrid,
   LayoutPanelLeft,
   Minimize,
@@ -64,6 +65,15 @@ export function Aside({ fullScreen, stateFullScreen }: AsideProps) {
                 Folios
               </a>
             </li>
+            <li>
+              <a
+                className="flex items-center justify-items-center gap-2"
+                href="/conteo"
+              >
+                <Barcode size={16} />
+                Conteo
+              </a>
+            </li>
           </ul>
         </nav>
       </aside>
@@ -114,14 +124,15 @@ export function Aside({ fullScreen, stateFullScreen }: AsideProps) {
                 <LayoutPanelLeft size={16} />
               </a>
             </li>
-            {/* <li>
+            <li>
               <a
                 className="flex items-center justify-items-center gap-2"
-                href="/centros"
+                href="/conteo"
               >
-                <LandPlot size={16} />
+                
+                <FishSymbol  size={16}/>
               </a>
-            </li> */}
+            </li>
             <li>
               <a
                 className="flex items-center justify-items-center gap-2"

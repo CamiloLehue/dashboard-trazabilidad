@@ -9,6 +9,7 @@ import { Centros } from "./pages/Centros.tsx";
 import { FolioDetalle } from "./pages/FolioDetalle.tsx";
 import { FolioHistorialDoc } from "./pages/FolioHistorialDoc.tsx";
 import { Dashboard } from "./pages/Dashboard.tsx";
+import { Conteo } from "./pages/Conteo.tsx";
 
 
 const AppLayout = () => {
@@ -70,6 +71,14 @@ const AppLayout = () => {
           element={
             <Layout title="Centros" description="Sistema">
               <Centros />
+            </Layout>
+          }
+        />
+        <Route
+          path="/conteo"
+          element={
+            <Layout title="Registro conteos" description="Sistema">
+              <Conteo />
             </Layout>
           }
         />
